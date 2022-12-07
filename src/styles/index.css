@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+       
+.btn-grad {
+  background-image: linear-gradient(to right, #000046 0%, #1CB5E0  51%, #000046  100%);
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 5px #eee;
+  border-radius: 16px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+.img-item{
+  min-height: 10vh;
+  margin: 0.5vh;
+  width: 10vw;
+  transform: rotate(10deg);
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movieList {
+  height: 70vh;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  justify-content: center;
+}
+
+.img-transparency {
+  mask-image: linear-gradient(transparent, black 20%, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(transparent, black 0%, black 60%, transparent 100%);
+}
+
+.navbar-icon {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 4vh;
+  width: 4vh;
+  height: 4vh;
+  cursor: pointer;
+}
